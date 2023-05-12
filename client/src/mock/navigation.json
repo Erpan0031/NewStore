@@ -1,0 +1,39 @@
+[
+  {
+    "name": "首页",
+    "analyticsAttributes": [
+      {
+        "name": "个人资料"
+      },
+      {
+        "name": "设置"
+      },
+      {
+        "name": "退出登录"
+      },
+      {
+        "name": "朋友"
+      }
+    ]
+  },
+  {
+    "name": "技术栈",
+    "analyticsAttributes": []
+  },
+  {
+    "name": "最新IT新闻",
+    "analyticsAttributes": []
+  },
+  {
+    "name": "汽车",
+    "analyticsAttributes": []
+  },
+  {
+    "name": "数码",
+    "analyticsAttributes": []
+  },
+  {
+    "name": "编程",
+    "analyticsAttributes": []
+  }
+]
