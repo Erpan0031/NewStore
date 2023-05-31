@@ -1,22 +1,18 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { Fragment, useCallback, useRef, useState } from "react";
 import { classNames } from "@/utils/utils";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
+  UserCircleIcon,
   XMarkIcon,
   BellIcon,
-  UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import mock from "@/mock/navigation.json";
+import navigation from "@/mock/navigation.json";
+import Image from "next/image";
 
 interface INavbarProps {
   className?: string;
 }
-interface MenuItem {
-  name: string;
-  analyticsAttributes?: { name: string }[];
-}
-
 interface MenuHeights {
   [key: string]: number;
 }
@@ -24,130 +20,241 @@ interface MenuHeights {
 const Navbar: React.FC<INavbarProps> = ({ className }) => {
   const [activeMenu, setActiveMenu] = useState("");
   const [outerDivHeight, setOuterDivHeight] = useState<number>(0);
-  const [openMobelMenu, setopenMobelMenu] = useState(false);
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
   const menuHeightsRef = useRef<MenuHeights>({});
-  // debounce
-  const handleMenuToggle = (name: string) => {
-    setActiveMenu(name);
-    const menuHeight = menuHeightsRef.current[name];
-    if (menuHeight) {
-      setOuterDivHeight(menuHeight);
-    }
-  };
 
-  const handleMenuMount = (name: string, node: HTMLElement | null): void => {
-    menuHeightsRef.current[name] = node ? node.clientHeight : 0;
-  };
-  // backdrop-filter backdrop-blur-lg bg-opacity-75
+  const handleMenuToggle = useCallback(
+    (name: string) => {
+      setActiveMenu(name);
+      const menuHeight = menuHeightsRef.current[name];
+      if (menuHeight) {
+        setOuterDivHeight(menuHeight);
+      }
+    },
+    [menuHeightsRef]
+  );
+
+  const handleMenuMount = useCallback(
+    (name: string, node: HTMLElement | null): void => {
+      menuHeightsRef.current[name] = node ? node.clientHeight : 0;
+    },
+    []
+  );
   return (
-    <div className={className} onMouseLeave={() => setActiveMenu("")}>
-      <Disclosure
-        onMouseLeave={() => setActiveMenu("")}
-        as="nav"
-        style={{ height: activeMenu ? `${outerDivHeight}px` : "44px" }}
-        className={classNames(
-          " bg-white dark:bg-zinc-900 transition-all border-b dark:border-zinc-900 duration-700  ease-in-out relative sm:overflow-hidden"
-        )}
-      >
-        <div className="relative ">
-          <div className="h-11">
-            <div className="hidden sm:block max-w-2xl h-full mx-auto">
-              <ul className="flex items-center justify-between h-full">
-                {mock.map((item: MenuItem, index: number) => {
-                  const isActive = activeMenu === item.name;
-
-                  return (
-                    <li
-                      className="h-full flex items-center px-2 group"
-                      key={index}
-                    >
-                      <span
-                        className={classNames(
-                          isActive
-                            ? "dark:text-white text-black "
-                            : "text-gray-400",
-                          "font-normal text-xs cursor-pointer z-10  transition ease-out duration-700"
-                        )}
-                        onMouseEnter={() => handleMenuToggle(item.name)}
-                      >
-                        {item.name}
-                      </span>
-                      <div
-                        className={classNames(
-                          isActive
-                            ? "visible opacity-100"
-                            : "invisible opacity-0",
-                          "absolute top-0 inset-x-0 -mt-11  overflow-hidden transition-all duration-700 ease-in-out"
-                        )}
-                        ref={(node) => handleMenuMount(item.name, node)}
-                        style={{ maxHeight: "calc(100vh - 44px)" }}
-                      >
-                        <div className="mt-11 overflow-y-auto">
-                          <div className="max-w-3xl pt-[40px] pb-[84px] mx-auto text-black dark:text-white my-10 grid grid-rows-3 grid-cols-3 gap-4">
-                            {item.analyticsAttributes?.map(({ name }) => (
-                              <div
-                                className=" text-lg font-semibold cursor-pointer "
-                                key={name}
-                              >
-                                {name}
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                  );
-                })}
-                <li className="font-normal text-xs cursor-pointer text-gray-400 ">
-                  <UserCircleIcon className="w-5 h-5" />
-                </li>
-                <li className="font-normal text-xs cursor-pointer text-gray-400 ">
-                  <BellIcon className="w-5 h-5 " />
-                </li>
-              </ul>
-            </div>
-            <div className=" sm:hidden px-2 flex items-center justify-between">
-              <div className="text-black dark:text-white">logo</div>
-              <Disclosure.Button
-                onClick={() => setopenMobelMenu(!openMobelMenu)}
-                className="inline-flex items-center justify-center rounded-md p-2 z-10 text-gray-400  "
-              >
-                <span className="sr-only">Open main menu</span>
-                {openMobelMenu ? (
-                  <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
-                ) : (
-                  <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
-                )}
-              </Disclosure.Button>
-            </div>
-          </div>
-        </div>
-        <div
+    <header className={` ${className}`}>
+      <p className="flex h-10 items-center -mb-10 justify-center bg-blue-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+        Get free delivery on orders over $100
+      </p>
+      <div className="relative">
+        <Disclosure
+          as="nav"
+          onMouseLeave={() => setActiveMenu("")}
+          style={{ height: activeMenu ? `${outerDivHeight}px` : "44px" }}
           className={classNames(
-            openMobelMenu ? "h-screen visible" : "h-0 invisible",
-            "sm:hidden bg-zinc-900 overflow-hidden absolute w-full top-0 transition-all duration-300 ease-in-out"
+            "w-full h-11 relative bg-white dark:bg-zinc-900 border-b   dark:border-none z-10 duration-300 ease-in-out "
           )}
         >
-          <div className="space-y-1 px- pb-3 pt-2 mt-11">
-            {mock.map(({ name }) => (
-              <Disclosure.Button
-                key={name}
-                as="button"
-                className="block rounded-md px-3 py-2 text-base font-medium text-white"
-              >
-                <span className="text-lg font-semibold">{name}</span>
-              </Disclosure.Button>
-            ))}
+          <div className="mx-auto hidden md:block container ">
+            <div className=" flex text-center text-[0.8rem] font-normal text-slate-900 dark:text-gray-400 ">
+              {/* 菜单区域 */}
+              <div className="h-11 max-w-4xl w-full mx-auto">
+                <ul className="flex items-center justify-between w-full h-full">
+                  <li>
+                    <Image src="vercel.svg" alt="me" width="64" height="32" />
+                  </li>
+                  {navigation?.map((item) => {
+                    const isActive = activeMenu === item.name;
+                    return (
+                      <li key={item.id}>
+                        <span
+                          className={classNames(
+                            isActive
+                              ? "dark:text-white text-black "
+                              : "text-gray-400",
+                            " cursor-pointer z-10 text-xs font-semibold transition ease-out duration-700"
+                          )}
+                          onMouseEnter={() => handleMenuToggle(item.name)}
+                        >
+                          {item.name}
+                        </span>
+
+                        <div
+                          className={classNames(
+                            isActive
+                              ? "visible opacity-100"
+                              : "invisible opacity-0",
+                            "absolute top-0 inset-x-0 -z-10 -mt-11 overflow-hidden transition-all duration-300 ease-in-out"
+                          )}
+                          ref={(node) => handleMenuMount(item.name, node)}
+                          style={{ maxHeight: "calc(100vh - 44px)" }}
+                        >
+                          <div className="mt-11 overflow-y-auto">
+                            <div className="max-w-5xl pt-[20px] mx-auto text-black dark:text-white my-10 flex">
+                              {item.baseGroups?.map(
+                                ({ title, id, baseLinks }) => (
+                                  <div
+                                    key={id}
+                                    className="text-left mx-10 w-auto"
+                                  >
+                                    <span className="text-gray-600 font-semibold ">
+                                      {title}
+                                    </span>
+                                    <ul className=" leading-10 text-lg font-semibold text-black dark:text-white">
+                                      {baseLinks.map((item) => (
+                                        <li
+                                          key={item.id}
+                                          className="cursor-pointer "
+                                        >
+                                          {item.text}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )
+                              )}
+                              {item.elevatedGroups?.map(
+                                ({ title, id, elevatedLinks }) => (
+                                  <div
+                                    key={id}
+                                    className="text-left mx-10 w-auto"
+                                  >
+                                    <span className=" text-gray-600 font-semibold  ">
+                                      {title}
+                                    </span>
+                                    <ul className="text-lg font-semibold text-black dark:text-white leading-10">
+                                      {elevatedLinks.map((item) => (
+                                        <li
+                                          key={item.id}
+                                          className="cursor-pointer"
+                                        >
+                                          {item.text}
+                                        </li>
+                                      ))}
+                                    </ul>
+                                  </div>
+                                )
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  })}
+                  <li>
+                    <Popover className="relative mt-1">
+                      <Popover.Button>
+                        <UserCircleIcon className="w-5 h-5" />
+                      </Popover.Button>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-150"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-60 max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                            <div className="bg-gray-50 p-2">
+                              <div className="  rounded-lg p-2 flex items-center">
+                                <div className="w-14 h-14 rounded-full bg-yellow-200"></div>
+                                <div className=" text-left ml-2">
+                                  <span className=" font-semibold text-base">
+                                    Erpan
+                                  </span>
+                                  <p className="text-gray-400 text-xs truncate max-w-[8rem]">
+                                    3014119383@qq.com
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </Popover>
+                  </li>
+                  <li>
+                    <Popover className="relative mt-1">
+                      <Popover.Button>
+                        <BellIcon className="w-5 h-5" />
+                      </Popover.Button>
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-150"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-64 max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                            <div className="bg-gray-50 p-2">
+                              <div className="rounded-lg p-2 flex items-center">
+                                <ul>
+                                  <li>
+                                    {/* <div className="border h-14">
+                                      <div></div>
+                                      <div></div>
+                                    </div> */}
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </Popover>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </Disclosure>
-      <div
-        className={classNames(
-          activeMenu !== "" ? " opacity-100 visible" : "opacity-0 invisible",
-          " fixed inset-x-0 top-0  h-screen backdrop-filter backdrop-blur-lg -z-10 transition-all duration-300 ease-in-out "
-        )}
-      ></div>
-    </div>
+          {/* 手机菜单 */}
+          <div className=" md:hidden px-2 flex items-center justify-between">
+            <div className="text-black dark:text-white">
+              <Image src="vercel.svg" alt="me" width="64" height="32" />
+            </div>
+            <Disclosure.Button
+              onClick={() => setOpenMobileMenu(!openMobileMenu)}
+              className="inline-flex items-center justify-center rounded-md p-2 z-10 text-gray-400  "
+            >
+              <span className="sr-only">Open main menu</span>
+              {openMobileMenu ? (
+                <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+              ) : (
+                <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+              )}
+            </Disclosure.Button>
+          </div>
+          {/* 下拉菜单 */}
+          <div
+            className={classNames(
+              openMobileMenu
+                ? "h-screen visible opacity-100"
+                : "h-0 invisible opacity-0",
+              "sm:hidden bg-white dark:bg-zinc-900 overflow-hidden absolute top-0 w-full transition-all duration-300 ease-in-out p-11"
+            )}
+          >
+            <ul className=" font-semibold text-black dark:text-white text-3xl leading-[4rem]">
+              {navigation?.map((item) => {
+                return <li key={item.id}>{item.name}</li>;
+              })}
+            </ul>
+          </div>
+        </Disclosure>
+        <div
+          className={classNames(
+            activeMenu !== ""
+              ? " opacity-100 visible overflow-y-none"
+              : "opacity-0 invisible",
+            "absolute top-0 w-full h-screen -z-10 backdrop-blur-md bg-white/30 transition-all duration-300 ease-in-out"
+          )}
+        ></div>
+      </div>
+    </header>
   );
 };
 

@@ -1,5 +1,8 @@
 {
 	"dependencies": {
 		"gsap": "^3.11.5"
+	},
+	"devDependencies": {
+		"swiper": "^9.3.1"
 	}
 }

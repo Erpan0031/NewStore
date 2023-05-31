@@ -31,6 +31,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  react-hook-form:
+    specifier: ^7.44.2
+    version: 7.44.2(react@18.2.0)
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
@@ -48,9 +51,15 @@ devDependencies:
   '@types/lodash':
     specifier: ^4.14.194
     version: 4.14.194
+  gsap:
+    specifier: ^3.11.5
+    version: registry.npmmirror.com/gsap@3.11.5
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
+  swiper:
+    specifier: ^9.3.1
+    version: registry.npmmirror.com/swiper@9.3.1
 
 packages:
 
@@ -210,6 +219,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -219,6 +229,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -228,6 +239,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
     requiresBuild: true
     dev: false
     optional: true
@@ -237,6 +249,7 @@ packages:
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
     requiresBuild: true
     dev: false
     optional: true
@@ -2114,6 +2127,15 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
+  /react-hook-form@7.44.2(react@18.2.0):
+    resolution: {integrity: sha512-IyihmIbCwzDI/iqlecTRa7+4BCnzNx40upSlGvIU7qwENhTf6APatm4bmL9ANtWKPYlD67SIlxfls7GwCUe+Lg==}
+    engines: {node: '>=12.22.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
@@ -2586,3 +2608,24 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: false
+
+  registry.npmmirror.com/gsap@3.11.5:
+    resolution: {integrity: sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==, registry: http://registry.npm.testplus.cn/, tarball: https://registry.npmmirror.com/gsap/-/gsap-3.11.5.tgz}
+    name: gsap
+    version: 3.11.5
+    dev: true
+
+  registry.npmmirror.com/ssr-window@4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==, registry: http://registry.npm.testplus.cn/, tarball: https://registry.npmmirror.com/ssr-window/-/ssr-window-4.0.2.tgz}
+    name: ssr-window
+    version: 4.0.2
+    dev: true
+
+  registry.npmmirror.com/swiper@9.3.1:
+    resolution: {integrity: sha512-YBDf0DLBLO7O4rwYHfz+HltkY4sDwKSbRf1it56rngpkYHxiKg0NkPMXAFmw2nGvMNQJwV14Dse47hQIifJzzA==, registry: http://registry.npm.testplus.cn/, tarball: https://registry.npmmirror.com/swiper/-/swiper-9.3.1.tgz}
+    name: swiper
+    version: 9.3.1
+    engines: {node: '>= 4.7.0'}
+    dependencies:
+      ssr-window: registry.npmmirror.com/ssr-window@4.0.2
+    dev: true

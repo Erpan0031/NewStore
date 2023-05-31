@@ -1,13 +1,32 @@
-lockfileVersion: 5.4
-
-specifiers:
-  gsap: ^3.11.5
+lockfileVersion: '6.0'
 
 dependencies:
-  gsap: 3.11.5
+  gsap:
+    specifier: ^3.11.5
+    version: 3.11.5
+
+devDependencies:
+  swiper:
+    specifier: ^9.3.1
+    version: registry.npmmirror.com/swiper@9.3.1
 
 packages:
 
-  /gsap/3.11.5:
+  /gsap@3.11.5:
     resolution: {integrity: sha512-Q89nKCLgoX5xUjznh9LcaIUkz54k1voNucT1Rpf9SJNFIQznBwFqt5qUUQbeVInFyN/n18OUJkpeI6CNEDt74w==}
     dev: false
+
+  registry.npmmirror.com/ssr-window@4.0.2:
+    resolution: {integrity: sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ssr-window/-/ssr-window-4.0.2.tgz}
+    name: ssr-window
+    version: 4.0.2
+    dev: true
+
+  registry.npmmirror.com/swiper@9.3.1:
+    resolution: {integrity: sha512-YBDf0DLBLO7O4rwYHfz+HltkY4sDwKSbRf1it56rngpkYHxiKg0NkPMXAFmw2nGvMNQJwV14Dse47hQIifJzzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-9.3.1.tgz}
+    name: swiper
+    version: 9.3.1
+    engines: {node: '>= 4.7.0'}
+    dependencies:
+      ssr-window: registry.npmmirror.com/ssr-window@4.0.2
+    dev: true

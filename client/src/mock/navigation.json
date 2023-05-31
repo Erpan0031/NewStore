@@ -1,39 +1,1946 @@
 [
   {
-    "name": "首页",
+    "id": "8543e00d",
+    "name": "商店",
+    "baseGroups": [
+      {
+        "id": "50db6649",
+        "title": "快速链接",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "quick links - store"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "find a store"
+              }
+            ],
+            "text": "查找零售店",
+            "url": "/retail/",
+            "ariaLabel": "",
+            "id": "6360947e"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "order status"
+              }
+            ],
+            "text": "订单状态",
+            "url": "/cn/shop/goto/order/list",
+            "ariaLabel": "",
+            "id": "b6937d57"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple trade in"
+              }
+            ],
+            "text": "Apple Trade In 换购计划",
+            "url": "/cn/shop/goto/trade_in",
+            "ariaLabel": "",
+            "id": "8df0c66a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "financing"
+              }
+            ],
+            "text": "分期付款",
+            "url": "/cn/shop/goto/ww/financing",
+            "ariaLabel": "",
+            "id": "73d44922"
+          }
+        ]
+      },
+      {
+        "id": "e22804cc",
+        "title": "专属商店选购",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop special stores"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "certified refurbished"
+              }
+            ],
+            "text": "认证的翻新产品",
+            "url": "/cn/shop/goto/special_deals",
+            "ariaLabel": "",
+            "id": "e2b36009"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "education"
+              }
+            ],
+            "text": "教育",
+            "url": "/cn/shop/goto/educationrouting",
+            "ariaLabel": "",
+            "id": "e2a0e2fd"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "business"
+              }
+            ],
+            "text": "商务",
+            "url": "/retail/business/",
+            "ariaLabel": "",
+            "id": "9d30faf1"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "ba470605",
+        "title": "选购",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore shop"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop the latest"
+              }
+            ],
+            "text": "选购新品",
+            "url": "/cn/shop/goto/store",
+            "ariaLabel": "选购 Apple 新品",
+            "id": "cd55f81b"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac"
+              }
+            ],
+            "text": "Mac",
+            "url": "/cn/shop/goto/buy_mac",
+            "ariaLabel": "",
+            "id": "68155380"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad"
+              }
+            ],
+            "text": "iPad",
+            "url": "/cn/shop/goto/buy_ipad",
+            "ariaLabel": "",
+            "id": "fe08bcc8"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone"
+              }
+            ],
+            "text": "iPhone",
+            "url": "/cn/shop/goto/buy_iphone",
+            "ariaLabel": "",
+            "id": "6417566d"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch"
+              }
+            ],
+            "text": "Apple Watch",
+            "url": "/cn/shop/goto/buy_watch",
+            "ariaLabel": "",
+            "id": "3e8e7404"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "accessories"
+              }
+            ],
+            "text": "配件",
+            "url": "/cn/shop/goto/buy_accessories",
+            "ariaLabel": "",
+            "id": "77511a0e"
+          }
+        ]
+      }
+    ],
     "analyticsAttributes": [
       {
-        "name": "个人资料"
+        "name": "data-analytics-title",
+        "value": "store"
       },
       {
-        "name": "设置"
-      },
-      {
-        "name": "退出登录"
-      },
-      {
-        "name": "朋友"
+        "name": "data-analytics-element-engagement",
+        "value": "hover - store"
       }
     ]
   },
   {
-    "name": "技术栈",
-    "analyticsAttributes": []
+    "id": "a5e87de9",
+    "name": "Mac",
+    "baseGroups": [
+      {
+        "id": "1a91d90e",
+        "title": "选购 Mac",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop mac"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop mac"
+              }
+            ],
+            "text": "选购 Mac",
+            "url": "/cn/shop/goto/buy_mac",
+            "ariaLabel": "",
+            "id": "34055a1a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac accessories"
+              }
+            ],
+            "text": "Mac 配件",
+            "url": "/cn/shop/goto/mac/accessories",
+            "ariaLabel": "",
+            "id": "da5cddca"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple trade in"
+              }
+            ],
+            "text": "Apple Trade In 换购计划",
+            "url": "/cn/shop/goto/trade_in",
+            "ariaLabel": "",
+            "id": "8df0c66a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "financing"
+              }
+            ],
+            "text": "分期付款",
+            "url": "/cn/shop/goto/ww/financing",
+            "ariaLabel": "",
+            "id": "73d44922"
+          }
+        ]
+      },
+      {
+        "id": "e7ff96cb",
+        "title": "Mac 相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from mac"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              },
+              {
+                "name": "data-analytics-title",
+                "value": "mac support"
+              }
+            ],
+            "text": "Mac 支持",
+            "url": "https://support.apple.com/zh-cn/mac?cid=gn-ols-mac-psp-prodfly",
+            "ariaLabel": "",
+            "id": "57f3296a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "macos ventura"
+              }
+            ],
+            "text": "macOS Ventura",
+            "url": "/macos/ventura/",
+            "ariaLabel": "",
+            "id": "e67c356e"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "continuity"
+              }
+            ],
+            "text": "连续互通",
+            "url": "/macos/continuity/",
+            "ariaLabel": "",
+            "id": "2a35d001"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "icloud"
+              }
+            ],
+            "text": "iCloud",
+            "url": "/icloud/",
+            "ariaLabel": "",
+            "id": "54f19b7a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac for business"
+              }
+            ],
+            "text": "Mac 商务应用",
+            "url": "/business/mac/",
+            "ariaLabel": "",
+            "id": "30491be3"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "education"
+              }
+            ],
+            "text": "教育",
+            "url": "/education/",
+            "ariaLabel": "",
+            "id": "03e54cf4"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "6f4b2e68",
+        "title": "探索 Mac",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore mac"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore all mac"
+              }
+            ],
+            "text": "探索全部 Mac 机型",
+            "url": "/mac/",
+            "ariaLabel": "",
+            "id": "01ae65eb"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "macbook air"
+              }
+            ],
+            "text": "MacBook Air",
+            "url": "/macbook-air/",
+            "ariaLabel": "",
+            "id": "2fb0c203"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "macbook pro"
+              }
+            ],
+            "text": "MacBook Pro",
+            "url": "/macbook-pro/",
+            "ariaLabel": "",
+            "id": "07f18dd7"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "imac"
+              }
+            ],
+            "text": "iMac",
+            "url": "/imac-24/",
+            "ariaLabel": "iMac",
+            "id": "73464818"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac mini"
+              }
+            ],
+            "text": "Mac mini",
+            "url": "/mac-mini/",
+            "ariaLabel": "",
+            "id": "312929e9"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac studio"
+              }
+            ],
+            "text": "Mac Studio",
+            "url": "/mac-studio/",
+            "ariaLabel": "",
+            "id": "8b68e9ab"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac pro"
+              }
+            ],
+            "text": "Mac Pro",
+            "url": "/mac-pro/",
+            "ariaLabel": "",
+            "id": "7fd5f89b"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "displays"
+              }
+            ],
+            "text": "显示器",
+            "url": "/displays/",
+            "ariaLabel": "",
+            "id": "acb05e48"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "compare mac"
+              }
+            ],
+            "text": "Mac 机型比较",
+            "url": "/mac/compare/",
+            "ariaLabel": "",
+            "id": "58a301a0"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac does that"
+              }
+            ],
+            "text": "有 Mac 都好办",
+            "url": "/mac/mac-does-that/",
+            "ariaLabel": "",
+            "id": "fa2f358f"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "mac"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - mac"
+      }
+    ]
   },
   {
-    "name": "最新IT新闻",
-    "analyticsAttributes": []
+    "id": "55ebfd86",
+    "name": "iPad",
+    "baseGroups": [
+      {
+        "id": "5c83db0d",
+        "title": "选购 iPad",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop ipad"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop ipad"
+              }
+            ],
+            "text": "选购 iPad",
+            "url": "/cn/shop/goto/buy_ipad",
+            "ariaLabel": "",
+            "id": "646edb34"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad accessories"
+              }
+            ],
+            "text": "iPad 配件",
+            "url": "/cn/shop/goto/ipad/accessories",
+            "ariaLabel": "",
+            "id": "7b9efc77"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple trade in"
+              }
+            ],
+            "text": "Apple Trade In 换购计划",
+            "url": "/cn/shop/goto/trade_in",
+            "ariaLabel": "",
+            "id": "8df0c66a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "financing"
+              }
+            ],
+            "text": "分期付款",
+            "url": "/cn/shop/goto/ww/financing",
+            "ariaLabel": "",
+            "id": "73d44922"
+          }
+        ]
+      },
+      {
+        "id": "774ac968",
+        "title": "iPad 相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from ipad"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipados support"
+              },
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              }
+            ],
+            "text": "iPad 支持",
+            "url": "https://support.apple.com/zh-cn/ipad?cid=gn-ols-ipad-psp-prodfly",
+            "ariaLabel": "",
+            "id": "72509a3f"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipados 16"
+              }
+            ],
+            "text": "iPadOS 16",
+            "url": "/ipados/ipados-16/",
+            "ariaLabel": "",
+            "id": "450eaee1"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "icloud"
+              }
+            ],
+            "text": "iCloud",
+            "url": "/icloud/",
+            "ariaLabel": "",
+            "id": "54f19b7a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "education"
+              }
+            ],
+            "text": "教育",
+            "url": "/education/",
+            "ariaLabel": "",
+            "id": "03e54cf4"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "217eece3",
+        "title": "探索 iPad",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore ipad"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore all ipad"
+              }
+            ],
+            "text": "探索全部 iPad 机型",
+            "url": "/ipad/",
+            "ariaLabel": "",
+            "id": "043a40d2"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad pro"
+              }
+            ],
+            "text": "iPad Pro",
+            "url": "/ipad-pro/",
+            "ariaLabel": "",
+            "id": "ef2d4c79"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad air"
+              }
+            ],
+            "text": "iPad Air",
+            "url": "/ipad-air/",
+            "ariaLabel": "",
+            "id": "b843359a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad"
+              }
+            ],
+            "text": "iPad",
+            "url": "/ipad-select/",
+            "ariaLabel": "iPad 10.2 英寸",
+            "id": "143603bf"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad mini"
+              }
+            ],
+            "text": "iPad mini",
+            "url": "/ipad-mini/",
+            "ariaLabel": "",
+            "id": "4d629904"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple pencil"
+              }
+            ],
+            "text": "Apple Pencil",
+            "url": "/apple-pencil/",
+            "ariaLabel": "",
+            "id": "3c25110e"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "keyboards"
+              }
+            ],
+            "text": "键盘",
+            "url": "/ipad-keyboards/",
+            "ariaLabel": "",
+            "id": "fc90e3f0"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "compare ipad"
+              }
+            ],
+            "text": "iPad 机型比较",
+            "url": "/ipad/compare/",
+            "ariaLabel": "",
+            "id": "44ce2411"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "why ipad"
+              }
+            ],
+            "text": "选 iPad 的理由",
+            "url": "/ipad/why-ipad/",
+            "ariaLabel": "",
+            "id": "77886cb3"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "ipad"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - ipad"
+      }
+    ]
   },
   {
-    "name": "汽车",
-    "analyticsAttributes": []
+    "id": "14d98359",
+    "name": "iPhone",
+    "baseGroups": [
+      {
+        "id": "b3e418f2",
+        "title": "选购 iPhone",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop iphone"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop iphone"
+              }
+            ],
+            "text": "选购 iPhone",
+            "url": "/cn/shop/goto/buy_iphone",
+            "ariaLabel": "",
+            "id": "ac6c812a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone accessories"
+              }
+            ],
+            "text": "iPhone 配件",
+            "url": "/cn/shop/goto/iphone/accessories",
+            "ariaLabel": "",
+            "id": "569abdec"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple trade in"
+              }
+            ],
+            "text": "Apple Trade In 换购计划",
+            "url": "/cn/shop/goto/trade_in",
+            "ariaLabel": "",
+            "id": "8df0c66a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "financing"
+              }
+            ],
+            "text": "分期付款",
+            "url": "/cn/shop/goto/ww/financing",
+            "ariaLabel": "",
+            "id": "73d44922"
+          }
+        ]
+      },
+      {
+        "id": "48bc6393",
+        "title": "iPhone 相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from iphone"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone support"
+              },
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              }
+            ],
+            "text": "iPhone 支持",
+            "url": "https://support.apple.com/zh-cn/iphone?cid=gn-ols-iphone-psp-prodfly",
+            "ariaLabel": "",
+            "id": "4429b986"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ios 16"
+              }
+            ],
+            "text": "iOS 16",
+            "url": "/ios/ios-16/",
+            "ariaLabel": "",
+            "id": "36c39f45"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone privacy"
+              }
+            ],
+            "text": "iPhone 隐私保护",
+            "url": "/iphone/privacy/",
+            "ariaLabel": "",
+            "id": "8615586d"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "icloud"
+              }
+            ],
+            "text": "iCloud",
+            "url": "/icloud/",
+            "ariaLabel": "",
+            "id": "54f19b7a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "wallet"
+              }
+            ],
+            "text": "Apple Pay",
+            "url": "/apple-pay/",
+            "ariaLabel": "",
+            "id": "32fff1f5"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "siri"
+              }
+            ],
+            "text": "Siri",
+            "url": "/siri/",
+            "ariaLabel": "",
+            "id": "18fe321f"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "13439b57",
+        "title": "探索 iPhone",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore iphone"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore all iphone"
+              }
+            ],
+            "text": "探索全部 iPhone 机型",
+            "url": "/iphone/",
+            "ariaLabel": "",
+            "id": "c3e95a19"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone 14 pro"
+              }
+            ],
+            "text": "iPhone 14 Pro",
+            "url": "/iphone-14-pro/",
+            "ariaLabel": "",
+            "id": "43eee1cd"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone 14"
+              }
+            ],
+            "text": "iPhone 14",
+            "url": "/iphone-14/",
+            "ariaLabel": "",
+            "id": "a8404c3f"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone 13"
+              }
+            ],
+            "text": "iPhone 13",
+            "url": "/cn/shop/goto/buy_iphone/iphone_13",
+            "ariaLabel": "",
+            "id": "42492460"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone 12"
+              }
+            ],
+            "text": "iPhone 12",
+            "url": "/cn/shop/goto/buy_iphone/iphone_12",
+            "ariaLabel": "",
+            "id": "937bb1ec"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone se"
+              }
+            ],
+            "text": "iPhone SE",
+            "url": "/iphone-se/",
+            "ariaLabel": "",
+            "id": "80e9d7ee"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "compare iphone"
+              }
+            ],
+            "text": "iPhone 机型比较",
+            "url": "/iphone/compare/",
+            "ariaLabel": "",
+            "id": "85726dbc"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "switch to iphone"
+              }
+            ],
+            "text": "换成 iPhone",
+            "url": "/iphone/switch/",
+            "ariaLabel": "",
+            "id": "11c0f949"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "iphone"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - iphone"
+      }
+    ]
   },
   {
-    "name": "数码",
-    "analyticsAttributes": []
+    "id": "d7861e86",
+    "name": "Watch",
+    "baseGroups": [
+      {
+        "id": "65840466",
+        "title": "选购 Apple Watch",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop watch"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop apple watch"
+              }
+            ],
+            "text": "选购 Apple Watch",
+            "url": "/cn/shop/goto/buy_watch",
+            "ariaLabel": "",
+            "id": "d5904261"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch studio"
+              }
+            ],
+            "text": "Apple Watch 定制坊",
+            "url": "/cn/shop/goto/studio/apple_watch",
+            "ariaLabel": "",
+            "id": "7e263f83"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch bands"
+              }
+            ],
+            "text": "Apple Watch 表带",
+            "url": "/cn/shop/goto/watch/bands",
+            "ariaLabel": "",
+            "id": "8640c4f9"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch accessories"
+              }
+            ],
+            "text": "Apple Watch 配件",
+            "url": "/cn/shop/goto/watch/accessories",
+            "ariaLabel": "",
+            "id": "b3fa51dd"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple trade in"
+              }
+            ],
+            "text": "Apple Trade In 换购计划",
+            "url": "/cn/shop/goto/trade_in",
+            "ariaLabel": "",
+            "id": "8df0c66a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "financing"
+              }
+            ],
+            "text": "分期付款",
+            "url": "/cn/shop/goto/ww/financing",
+            "ariaLabel": "",
+            "id": "73d44922"
+          }
+        ]
+      },
+      {
+        "id": "5962d34d",
+        "title": "Apple Watch 相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from watch"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              },
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch support"
+              }
+            ],
+            "text": "Apple Watch 支持",
+            "url": "https://support.apple.com/zh-cn/watch?cid=gn-ols-watch-psp-prodfly",
+            "ariaLabel": "",
+            "id": "af092030"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "watchos 9"
+              }
+            ],
+            "text": "watchOS 9",
+            "url": "/watchos/watchos-9/",
+            "ariaLabel": "",
+            "id": "a6fd35e0"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "1f8e0833",
+        "title": "探索 Apple Watch",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore watch"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore all apple watch"
+              }
+            ],
+            "text": "探索全部 Apple Watch 表款",
+            "url": "/watch/",
+            "ariaLabel": "",
+            "id": "bce6ad97"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch ultra"
+              }
+            ],
+            "text": "Apple Watch Ultra",
+            "url": "/apple-watch-ultra/",
+            "ariaLabel": "",
+            "id": "c729f70f"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch series 8"
+              }
+            ],
+            "text": "Apple Watch Series 8",
+            "url": "/apple-watch-series-8/",
+            "ariaLabel": "",
+            "id": "beaaadd8"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch se"
+              }
+            ],
+            "text": "Apple Watch SE",
+            "url": "/apple-watch-se/",
+            "ariaLabel": "",
+            "id": "48e79dfd"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch nike"
+              }
+            ],
+            "text": "Apple Watch Nike",
+            "url": "/apple-watch-nike/",
+            "ariaLabel": "",
+            "id": "5ef84165"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple watch hermes"
+              }
+            ],
+            "text": "Apple Watch Hermès",
+            "url": "/apple-watch-hermes/",
+            "ariaLabel": "",
+            "id": "17ef2568"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "compare watch"
+              }
+            ],
+            "text": "Apple Watch 表款比较",
+            "url": "/watch/compare/",
+            "ariaLabel": "",
+            "id": "11b0fad1"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "why apple watch"
+              }
+            ],
+            "text": "Apple Watch 哪里好",
+            "url": "/watch/why-apple-watch/",
+            "ariaLabel": "",
+            "id": "558c0add"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "watch"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - watch"
+      }
+    ]
   },
   {
-    "name": "编程",
-    "analyticsAttributes": []
+    "id": "fdc42ff0",
+    "name": "AirPods",
+    "baseGroups": [
+      {
+        "id": "4a04f230",
+        "title": "选购 AirPods",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop airpods"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop airpods"
+              }
+            ],
+            "text": "选购 AirPods",
+            "url": "/cn/shop/goto/accessories/all_accessories/headphones_speakers?fh=47d1%2B3214%2B45aa%2B45ab&f=apple-overear-sport&page=1",
+            "ariaLabel": "",
+            "id": "52f4b30a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods accessories"
+              }
+            ],
+            "text": "AirPods 配件",
+            "url": "/cn/shop/goto/accessories/all_accessories/headphones_speakers?fh=47d1%2Be62115&f=headphoneacc&page=1",
+            "ariaLabel": "",
+            "id": "244aa74e"
+          }
+        ]
+      },
+      {
+        "id": "967e8eb7",
+        "title": "AirPods 相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from airpods"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods support"
+              },
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              }
+            ],
+            "text": "AirPods 支持",
+            "url": "https://support.apple.com/zh-cn/airpods?cid=gn-ols-airpods-psp-prodfly",
+            "ariaLabel": "",
+            "id": "88054260"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple music"
+              }
+            ],
+            "text": "Apple Music",
+            "url": "/apple-music/",
+            "ariaLabel": "",
+            "id": "18e96b49"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "4a6e9fcb",
+        "title": "探索 AirPods",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore airpods"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore all airpods"
+              }
+            ],
+            "text": "探索全部 AirPods 机型",
+            "url": "/airpods/",
+            "ariaLabel": "",
+            "id": "3b9daa53"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods 2nd generation"
+              }
+            ],
+            "text": "AirPods 第二代",
+            "url": "/airpods-2nd-generation/",
+            "ariaLabel": "",
+            "id": "c6746cd1"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods 3rd generation"
+              }
+            ],
+            "text": "AirPods 第三代",
+            "url": "/airpods-3rd-generation/",
+            "ariaLabel": "",
+            "id": "5d3f7969"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods pro 2nd generation"
+              }
+            ],
+            "text": "AirPods Pro 第二代",
+            "url": "/airpods-pro/",
+            "ariaLabel": "",
+            "id": "36c19db6"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods max"
+              }
+            ],
+            "text": "AirPods Max",
+            "url": "/airpods-max/",
+            "ariaLabel": "",
+            "id": "eafb5a71"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "compare airpods"
+              }
+            ],
+            "text": "AirPods 机型比较",
+            "url": "/airpods/compare/",
+            "ariaLabel": "",
+            "id": "d5353c61"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "airpods"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - airpods"
+      }
+    ]
+  },
+  {
+    "id": "59b793d4",
+    "name": "Home",
+    "baseGroups": [
+      {
+        "id": "a9814872",
+        "title": "选购家居设备",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop home"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop homepod"
+              }
+            ],
+            "text": "选购 HomePod",
+            "url": "/cn/shop/goto/buy_homepod/homepod",
+            "ariaLabel": "",
+            "id": "e8f3eb7c"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop homepod mini"
+              }
+            ],
+            "text": "选购 HomePod mini",
+            "url": "/cn/shop/goto/buy_homepod/homepod_mini",
+            "ariaLabel": "",
+            "id": "8854d260"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "home accessories"
+              }
+            ],
+            "text": "家居配件",
+            "url": "/cn/shop/goto/accessories/homekit",
+            "ariaLabel": "",
+            "id": "99078976"
+          }
+        ]
+      },
+      {
+        "id": "2e54e366",
+        "title": "家居相关",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "more from home"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "homepod support"
+              },
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              }
+            ],
+            "text": "HomePod 支持",
+            "url": "https://support.apple.com/zh-cn/homepod?cid=gn-ols-homepod-psp-prodfly",
+            "ariaLabel": "",
+            "id": "8f03b41c"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "home app"
+              }
+            ],
+            "text": "家庭 App",
+            "url": "/home-app/",
+            "ariaLabel": "",
+            "id": "96933db5"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple music"
+              }
+            ],
+            "text": "Apple Music",
+            "url": "/apple-music/",
+            "ariaLabel": "",
+            "id": "18e96b49"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "siri"
+              }
+            ],
+            "text": "Siri",
+            "url": "/siri/",
+            "ariaLabel": "",
+            "id": "18fe321f"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airplay"
+              }
+            ],
+            "text": "隔空播放",
+            "url": "/airplay/",
+            "ariaLabel": "",
+            "id": "d9654afb"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "3b6a3c0b",
+        "title": "探索家居",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore home"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore home"
+              }
+            ],
+            "text": "探索家居项目",
+            "url": "/apple-home/",
+            "ariaLabel": "",
+            "id": "5a4bd22a"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "homepod"
+              }
+            ],
+            "text": "HomePod",
+            "url": "/homepod-2nd-generation/",
+            "ariaLabel": "",
+            "id": "6a938e42"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "homepod mini"
+              }
+            ],
+            "text": "HomePod mini",
+            "url": "/homepod-mini/",
+            "ariaLabel": "",
+            "id": "11166698"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "home"
+      },
+      {
+        "name": "data-analytics-region",
+        "value": "home"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - home"
+      }
+    ]
+  },
+  {
+    "id": "0b24c174",
+    "name": "娱乐",
+    "baseGroups": [
+      {
+        "id": "46bea693",
+        "title": "技术支持",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "support - entertainment"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple music support"
+              },
+              {
+                "name": "data-analytics-exit-link",
+                "value": "true"
+              }
+            ],
+            "text": "Apple Music 支持",
+            "url": "https://support.apple.com/zh-cn/music?cid=gn-ols-music-psp-prodfly",
+            "ariaLabel": "",
+            "id": "0c03d161"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "4e77008c",
+        "title": "探索娱乐",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore entertainment"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "explore entertainment"
+              }
+            ],
+            "text": "探索娱乐内容",
+            "url": "/services/",
+            "ariaLabel": "",
+            "id": "0ecb6763"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple music"
+              }
+            ],
+            "text": "Apple Music",
+            "url": "/apple-music/",
+            "ariaLabel": "",
+            "id": "5629e400"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "apple podcasts"
+              }
+            ],
+            "text": "Apple 播客",
+            "url": "/apple-podcasts/",
+            "ariaLabel": "",
+            "id": "dced7c5d"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "app store"
+              }
+            ],
+            "text": "App Store",
+            "url": "/app-store/",
+            "ariaLabel": "",
+            "id": "99908849"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "entertainment"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - entertainment"
+      }
+    ]
+  },
+  {
+    "id": "c734dfc9",
+    "name": "配件",
+    "baseGroups": [
+      {
+        "id": "4262cbac",
+        "title": "探索配件",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "explore accessories"
+          }
+        ],
+        "baseLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "made by apple"
+              }
+            ],
+            "text": "来自 Apple 的配件",
+            "url": "/cn/shop/goto/accessories/all_accessories/made_by_apple",
+            "ariaLabel": "",
+            "id": "4e0ee64f"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "beats by dre"
+              }
+            ],
+            "text": "Beats by Dr. Dre",
+            "url": "/cn/shop/goto/accessories/all_accessories/beats_featured",
+            "ariaLabel": "",
+            "id": "207e11ae"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airtag"
+              }
+            ],
+            "text": "AirTag",
+            "url": "/airtag/",
+            "ariaLabel": "",
+            "id": "4f5eed9a"
+          }
+        ]
+      }
+    ],
+    "elevatedGroups": [
+      {
+        "id": "72b7987d",
+        "title": "选购配件",
+        "analyticsAttributes": [
+          {
+            "name": "data-analytics-region",
+            "value": "shop accessories"
+          }
+        ],
+        "elevatedLinks": [
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "shop all accessories"
+              }
+            ],
+            "text": "选购所有配件",
+            "url": "/cn/shop/goto/buy_accessories",
+            "ariaLabel": "",
+            "id": "ef2db965"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "mac accessories"
+              }
+            ],
+            "text": "Mac",
+            "url": "/cn/shop/goto/mac/accessories",
+            "ariaLabel": "",
+            "id": "d4684cee"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "ipad accessories"
+              }
+            ],
+            "text": "iPad",
+            "url": "/cn/shop/goto/ipad/accessories",
+            "ariaLabel": "",
+            "id": "e7e0a8f3"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "iphone accessories"
+              }
+            ],
+            "text": "iPhone",
+            "url": "/cn/shop/goto/iphone/accessories",
+            "ariaLabel": "",
+            "id": "0f017fc2"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "watch accessories"
+              }
+            ],
+            "text": "Apple Watch",
+            "url": "/cn/shop/goto/watch/accessories",
+            "ariaLabel": "",
+            "id": "0704af73"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "airpods"
+              }
+            ],
+            "text": "AirPods",
+            "url": "/cn/shop/goto/accessories/all_accessories/headphones_speakers?fh=47d1%2B3214%2B45aa%2B45ab&f=apple-overear-sport&page=1",
+            "ariaLabel": "",
+            "id": "a6f3befc"
+          },
+          {
+            "analyticsAttributes": [
+              {
+                "name": "data-analytics-title",
+                "value": "home accessories"
+              }
+            ],
+            "text": "家居",
+            "url": "/cn/shop/goto/accessories/homekit",
+            "ariaLabel": "",
+            "id": "7d01669f"
+          }
+        ]
+      }
+    ],
+    "analyticsAttributes": [
+      {
+        "name": "data-analytics-title",
+        "value": "accessories"
+      },
+      {
+        "name": "data-analytics-element-engagement",
+        "value": "hover - accessories"
+      }
+    ]
   }
 ]
